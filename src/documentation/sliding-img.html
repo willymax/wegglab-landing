@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Shapes - Documentation | Unify - Multipurpose Responsive Template</title>
+  <title>Shapes - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,7 +34,7 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/docs-sidebar.html", {
-      "link": "sliding-img.html"
+    "link": "sliding-img.html"
     })
     <!-- End Navbar -->
 
@@ -63,10 +64,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab1" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill"
+                data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1"
+                role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -77,7 +80,8 @@
         <div class="tab-content" id="navTabContent1">
           <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
             <div class="sliding-img">
-              <div class="sliding-img-frame-to-start" style="background-image: url(@@autopath/assets/img/others/img1.png);"></div>
+              <div class="sliding-img-frame-to-start"
+                style="background-image: url(@@autopath/assets/img/others/img1.png);"></div>
             </div>
           </div>
 
@@ -97,7 +101,8 @@
 
       <!-- Heading -->
       <h2 id="slide-to-right-direction" class="hs-docs-heading">
-        Slide to right direction <a class="anchorjs-link" href="#slide-to-right-direction" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Slide to right direction <a class="anchorjs-link" href="#slide-to-right-direction" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
@@ -108,10 +113,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab2" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill"
+                data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2"
+                role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -122,7 +129,8 @@
         <div class="tab-content" id="navTabContent2">
           <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
             <div class="sliding-img">
-              <div class="sliding-img-frame-to-end" style="background-image: url(@@autopath/assets/img/others/img2.png);"></div>
+              <div class="sliding-img-frame-to-end"
+                style="background-image: url(@@autopath/assets/img/others/img2.png);"></div>
             </div>
           </div>
 
@@ -167,7 +175,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -189,10 +197,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/docs-search.json')
-      .then(response => response.json())
-      .then(data => {
-        docsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
 
       // INITIALIZATION OF GO TO
       // =======================================================
@@ -200,4 +208,5 @@
     })()
   </script>
 </body>
+
 </html>

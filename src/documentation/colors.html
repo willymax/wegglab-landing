@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Colors - Documentation | Unify - Multipurpose Responsive Template</title>
+  <title>Colors - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,7 +34,7 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/docs-sidebar.html", {
-      "link": "colors.html"
+    "link": "colors.html"
     })
     <!-- End Navbar -->
 
@@ -44,8 +45,10 @@
         <div class="row align-items-center">
           <div class="col-sm">
             <h1 class="docs-page-header-title">Colors</h1>
-            <p class="docs-page-header-text">Convey meaning through <code>color</code> with a handful of color utility classes. Includes support for styling links with hover states, too.</p>
-            <a class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/colors/" target="_blank">Bootstrap Colors documentation <i class="bi-box-arrow-up-right"></i></a>
+            <p class="docs-page-header-text">Convey meaning through <code>color</code> with a handful of color utility
+              classes. Includes support for styling links with hover states, too.</p>
+            <a class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/colors/"
+              target="_blank">Bootstrap Colors documentation <i class="bi-box-arrow-up-right"></i></a>
           </div>
         </div>
       </div>
@@ -57,7 +60,9 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Colorize text with color utilities. If you want to colorize links, you can use the <a class="link link-bordered" href="@@autopath/documentation/links.html"><code>.link-*</code> helper classes</a> which have <code>:hover</code> and <code>:focus</code> states.</p>
+      <p>Colorize text with color utilities. If you want to colorize links, you can use the <a
+          class="link link-bordered" href="@@autopath/documentation/links.html"><code>.link-*</code> helper classes</a>
+        which have <code>:hover</code> and <code>:focus</code> states.</p>
 
       <!-- Card -->
       <div class="card">
@@ -66,10 +71,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab1" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab1" data-toggle="pill" href="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab1" data-toggle="pill" href="#nav-result1" role="tab"
+                aria-controls="nav-result1" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab1" data-toggle="pill" href="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab1" data-toggle="pill" href="#nav-html1" role="tab"
+                aria-controls="nav-html1" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -92,7 +99,9 @@
             <p class="text-white bg-dark">.text-white</p>
             <p class="text-white-70 bg-dark">.text-white-70</p>
             <p class="text-reset">.text-reset</p>
-            <a href="#"><p class="text-inherit">.text-inherit</p></a>
+            <a href="#">
+              <p class="text-inherit">.text-inherit</p>
+            </a>
           </div>
 
           <div class="tab-pane fade" id="nav-html1" role="tabpanel" aria-labelledby="nav-htmlTab1">
@@ -147,7 +156,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -169,10 +178,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/docs-search.json')
-      .then(response => response.json())
-      .then(data => {
-        docsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
 
       // INITIALIZATION OF GO TO
       // =======================================================
@@ -180,4 +189,5 @@
     })()
   </script>
 </body>
+
 </html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Shadows - Documentation | Unify - Multipurpose Responsive Template</title>
+  <title>Shadows - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,7 +34,7 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/docs-sidebar.html", {
-      "link": "shadows.html"
+    "link": "shadows.html"
     })
     <!-- End Navbar -->
 
@@ -45,13 +46,17 @@
           <div class="col-sm">
             <h1 class="docs-page-header-title">Shadow</h1>
             <p class="docs-page-header-text">Add or remove shadows to elements with box-shadow utilities.</p>
-            <a class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/shadows/" target="_blank">Bootstrap Shadows documentation <i class="bi-box-arrow-up-right"></i></a>
+            <a class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/shadows/"
+              target="_blank">Bootstrap Shadows documentation <i class="bi-box-arrow-up-right"></i></a>
           </div>
         </div>
       </div>
       <!-- End Page Header -->
 
-      <p>While shadows on components are disabled by default in Bootstrap and can be enabled via <code>$enable-shadows</code>, you can also quickly add or remove a shadow with our <code>box-shadow</code> utility classes. Includes support for <code>.shadow-none</code> and three default sizes (which have associated variables to match).</p>
+      <p>While shadows on components are disabled by default in Bootstrap and can be enabled via
+        <code>$enable-shadows</code>, you can also quickly add or remove a shadow with our <code>box-shadow</code>
+        utility classes. Includes support for <code>.shadow-none</code> and three default sizes (which have associated
+        variables to match).</p>
 
       <!-- Card -->
       <div class="card">
@@ -60,10 +65,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab1" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill"
+                data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1"
+                role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -123,7 +130,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -145,10 +152,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/docs-search.json')
-      .then(response => response.json())
-      .then(data => {
-        docsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
 
       // INITIALIZATION OF GO TO
       // =======================================================
@@ -156,4 +163,5 @@
     })()
   </script>
 </body>
+
 </html>

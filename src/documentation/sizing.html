@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Sizing - Documentation | Unify - Multipurpose Responsive Template</title>
+  <title>Sizing - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,7 +34,7 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/docs-sidebar.html", {
-      "link": "sizing.html"
+    "link": "sizing.html"
     })
     <!-- End Navbar -->
 
@@ -44,8 +45,10 @@
         <div class="row align-items-center">
           <div class="col-sm">
             <h1 class="docs-page-header-title">Sizing</h1>
-            <p class="docs-page-header-text">Easily make an element as wide or as tall with our width and height utilities.</p>
-            <a class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/sizing/" target="_blank">Bootstrap Sizing documentation <i class="bi-box-arrow-up-right"></i></a>
+            <p class="docs-page-header-text">Easily make an element as wide or as tall with our width and height
+              utilities.</p>
+            <a class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/sizing/"
+              target="_blank">Bootstrap Sizing documentation <i class="bi-box-arrow-up-right"></i></a>
           </div>
         </div>
       </div>
@@ -53,11 +56,14 @@
 
       <!-- Heading -->
       <h2 id="relative-to-the-parent" class="hs-docs-heading">
-        Relative to the parent <a class="anchorjs-link" href="#relative-to-the-parent" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Relative to the parent <a class="anchorjs-link" href="#relative-to-the-parent" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
-      <p>Width and height utilities are generated from the <code>$sizes</code> Sass map in <code>_utilities.scss</code>. Includes support for <code>25%</code>, <code>50%</code>, <code>75%</code>, <code>100%</code>, and <code>auto</code> by default. Modify those values as you need to generate different utilities here.</p>
+      <p>Width and height utilities are generated from the <code>$sizes</code> Sass map in <code>_utilities.scss</code>.
+        Includes support for <code>25%</code>, <code>50%</code>, <code>75%</code>, <code>100%</code>, and
+        <code>auto</code> by default. Modify those values as you need to generate different utilities here.</p>
 
       <pre class="rounded mb-3">
         <code class="language-markup" data-lang="html">
@@ -81,7 +87,8 @@
         </code>
       </pre>
 
-      <p>You can also use <code>max-width: 100%;</code>, <code>min-height: 100%;</code> and <code>max-height: 100%;</code> utilities as needed.</p>
+      <p>You can also use <code>max-width: 100%;</code>, <code>min-height: 100%;</code> and
+        <code>max-height: 100%;</code> utilities as needed.</p>
 
       <pre class="rounded mb-3">
         <code class="language-markup" data-lang="html">
@@ -103,7 +110,8 @@
 
       <!-- Heading -->
       <h2 id="relative-to-the-viewport" class="hs-docs-heading">
-        Relative to the viewport <a class="anchorjs-link" href="#relative-to-the-viewport" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Relative to the viewport <a class="anchorjs-link" href="#relative-to-the-viewport" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
@@ -145,7 +153,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -167,10 +175,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/docs-search.json')
-      .then(response => response.json())
-      .then(data => {
-        docsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
 
       // INITIALIZATION OF GO TO
       // =======================================================
@@ -178,4 +186,5 @@
     })()
   </script>
 </body>
+
 </html>

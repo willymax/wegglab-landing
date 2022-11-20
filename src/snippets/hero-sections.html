@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Hero Sections - Snippets | Unify - Multipurpose Responsive Template</title>
+  <title>Hero Sections - Snippets | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,8 +34,8 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/snippets-sidebar.html", {
-      "category": "",
-      "link": "hero-sections.html"
+    "category": "",
+    "link": "hero-sections.html"
     })
     <!-- End Navbar -->
 
@@ -259,7 +260,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -273,10 +274,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/snippets-search.json')
-      .then(response => response.json())
-      .then(data => {
-        snippetsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          snippetsSearch.getItem(0).add(data)
+        })
 
 
       // INITIALIZATION OF GO TO
@@ -285,4 +286,5 @@
     })()
   </script>
 </body>
+
 </html>

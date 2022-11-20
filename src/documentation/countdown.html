@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Countdown - Documentation | Unify - Multipurpose Responsive Template</title>
+  <title>Countdown - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,7 +34,7 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/docs-sidebar.html", {
-      "link": "countdown.html"
+    "link": "countdown.html"
     })
     <!-- End Navbar -->
 
@@ -44,8 +45,10 @@
         <div class="row align-items-center">
           <div class="col-sm">
             <h1 class="docs-page-header-title">Countdown</h1>
-            <p class="docs-page-header-text">A simple JavaScript API for producing an accurate, intuitive description of the timespan between two Date instances.</p>
-            <a class="link" href="http://countdownjs.org/" target="_blank">Countdown documentation <i class="bi-box-arrow-up-right"></i></a>
+            <p class="docs-page-header-text">A simple JavaScript API for producing an accurate, intuitive description of
+              the timespan between two Date instances.</p>
+            <a class="link" href="http://countdownjs.org/" target="_blank">Countdown documentation <i
+                class="bi-box-arrow-up-right"></i></a>
           </div>
         </div>
       </div>
@@ -57,7 +60,8 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing
+            Plugins</u></em> to enable it.</p>
 
       <pre class="rounded mb-4">
         <code class="language-html" data-lang="html">
@@ -65,7 +69,8 @@
         </code>
       </pre>
 
-      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code>&lt;/body&gt;</code> tag, to enable it.</p>
+      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing
+        <code>&lt;/body&gt;</code> tag, to enable it.</p>
 
       <pre class="rounded">
         <code class="language-html" data-lang="html">
@@ -110,10 +115,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab1" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill"
+                data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1"
+                role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -201,10 +208,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab2" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill"
+                data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2"
+                role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -214,10 +223,12 @@
         <!-- Tab Content -->
         <div class="tab-content" id="navTabContent2">
           <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open modal</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Open
+              modal</button>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -351,7 +362,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -373,10 +384,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/docs-search.json')
-      .then(response => response.json())
-      .then(data => {
-        docsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
 
       // INITIALIZATION OF GO TO
       // =======================================================
@@ -407,4 +418,5 @@
     })()
   </script>
 </body>
+
 </html>

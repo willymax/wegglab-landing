@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Offcanvas - Documentation | Unify - Multipurpose Responsive Template</title>
+  <title>Offcanvas - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,7 +34,7 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/docs-sidebar.html", {
-      "link": "offcanvas.html"
+    "link": "offcanvas.html"
     })
     <!-- End Navbar -->
 
@@ -44,8 +45,10 @@
         <div class="row align-items-center">
           <div class="col-sm">
             <h1 class="docs-page-header-title">Offcanvas</h1>
-            <p class="docs-page-header-text">Build hidden sidebars into your project for navigation, shopping carts, and more.</p>
-            <a class="link" href="https://getbootstrap.com/docs/5.0/components/offcanvas/" target="_blank">Bootstrap Offcanvas documentation <i class="bi-box-arrow-up-right"></i></a>
+            <p class="docs-page-header-text">Build hidden sidebars into your project for navigation, shopping carts, and
+              more.</p>
+            <a class="link" href="https://getbootstrap.com/docs/5.0/components/offcanvas/" target="_blank">Bootstrap
+              Offcanvas documentation <i class="bi-box-arrow-up-right"></i></a>
           </div>
         </div>
       </div>
@@ -57,19 +60,28 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Offcanvas is a sidebar component that can be toggled via JavaScript to appear from the left, right, or bottom edge of the viewport. Buttons or anchors are used as triggers that are attached to specific elements you toggle, and <code>data</code> attributes are used to invoke our JavaScript.</p>
+      <p>Offcanvas is a sidebar component that can be toggled via JavaScript to appear from the left, right, or bottom
+        edge of the viewport. Buttons or anchors are used as triggers that are attached to specific elements you toggle,
+        and <code>data</code> attributes are used to invoke our JavaScript.</p>
 
       <ul>
-        <li>Offcanvas shares some of the same JavaScript code as modals. Conceptually, they are quite similar, but they are separate plugins.</li>
-        <li>Similarly, some <a class="link" href="#sass">source Sass</a> variables for offcanvas&rsquo;s styles and dimensions are inherited from the modal&rsquo;s variables.</li>
+        <li>Offcanvas shares some of the same JavaScript code as modals. Conceptually, they are quite similar, but they
+          are separate plugins.</li>
+        <li>Similarly, some <a class="link" href="#sass">source Sass</a> variables for offcanvas&rsquo;s styles and
+          dimensions are inherited from the modal&rsquo;s variables.</li>
         <li>When shown, offcanvas includes a default backdrop that can be clicked to hide the offcanvas.</li>
         <li>Similar to modals, only one offcanvas can be shown at a time.</li>
       </ul>
 
-      <p><span class="text-dark fw-bold">Heads up!</span> Given how CSS handles animations, you cannot use <code>margin</code> or <code>translate</code> on an <code>.offcanvas</code> element. Instead, use the class as an independent wrapping element.</p>
+      <p><span class="text-dark fw-bold">Heads up!</span> Given how CSS handles animations, you cannot use
+        <code>margin</code> or <code>translate</code> on an <code>.offcanvas</code> element. Instead, use the class as
+        an independent wrapping element.</p>
 
       <div class="alert alert-soft-dark">
-        The animation effect of this component is dependent on the <code>prefers-reduced-motion</code> media query. See the <a class="link" href="https://getbootstrap.com/docs/5.0/getting-started/accessibility/#reduced-motion">reduced motion section of our accessibility documentation</a>.
+        The animation effect of this component is dependent on the <code>prefers-reduced-motion</code> media query. See
+        the <a class="link"
+          href="https://getbootstrap.com/docs/5.0/getting-started/accessibility/#reduced-motion">reduced motion section
+          of our accessibility documentation</a>.
       </div>
 
       <!-- Heading -->
@@ -84,14 +96,16 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Use the buttons below to show and hide an offcanvas element via JavaScript that toggles the <code>.show</code> class on an element with the <code>.offcanvas</code> class.</p>
+      <p>Use the buttons below to show and hide an offcanvas element via JavaScript that toggles the <code>.show</code>
+        class on an element with the <code>.offcanvas</code> class.</p>
 
       <ul>
         <li><code>.offcanvas</code> hides content (default)</li>
         <li><code>.offcanvas.show</code> shows content</li>
       </ul>
 
-      <p>You can use a link with the <code>href</code> attribute, or a button with the <code>data-bs-target</code> attribute. In both cases, the <code>data-bs-toggle=&quot;offcanvas&quot;</code> is required.</p>
+      <p>You can use a link with the <code>href</code> attribute, or a button with the <code>data-bs-target</code>
+        attribute. In both cases, the <code>data-bs-toggle=&quot;offcanvas&quot;</code> is required.</p>
 
       <!-- Card -->
       <div class="card">
@@ -100,10 +114,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab1" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill"
+                data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1"
+                role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -113,25 +129,31 @@
         <!-- Tab Content -->
         <div class="tab-content" id="navTabContent1">
           <div class="tab-pane fade p-4 show active" id="nav-result1" role="tabpanel" aria-labelledby="nav-resultTab1">
-            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+              aria-controls="offcanvasExample">
               Link with href
             </a>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample">
               Button with data-bs-target
             </button>
 
             <!-- Offcanvas -->
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 <div>
-                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+                  Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                  lists, etc.
                 </div>
                 <div class="dropdown mt-3">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown">
                     Dropdown button
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -192,7 +214,8 @@
       </h2>
       <!-- End Heading -->
 
-      <p>There&rsquo;s no default placement for offcanvas components, so you must add one of the modifier classes below;</p>
+      <p>There&rsquo;s no default placement for offcanvas components, so you must add one of the modifier classes below;
+      </p>
 
       <ul>
         <li><code>.offcanvas-start</code> places offcanvas on the left of the viewport (shown above)</li>
@@ -210,10 +233,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab2" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill"
+                data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2"
+                role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -223,12 +248,14 @@
         <!-- Tab Content -->
         <div class="tab-content" id="navTabContent2">
           <div class="tab-pane fade p-4 show active" id="nav-result2" role="tabpanel" aria-labelledby="nav-resultTab2">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+              aria-controls="offcanvasTop">Toggle top offcanvas</button>
 
             <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
               <div class="offcanvas-header">
                 <h5 id="offcanvasTopLabel">Offcanvas top</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 ...
@@ -265,10 +292,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab3" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill" data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab3" href="#nav-result3" data-bs-toggle="pill"
+                data-bs-target="#nav-result3" role="tab" aria-controls="nav-result3" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3" role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab3" href="#nav-html3" data-bs-toggle="pill" data-bs-target="#nav-html3"
+                role="tab" aria-controls="nav-html3" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -278,12 +307,15 @@
         <!-- Tab Content -->
         <div class="tab-content" id="navTabContent3">
           <div class="tab-pane fade p-4 show active" id="nav-result3" role="tabpanel" aria-labelledby="nav-resultTab3">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">Toggle right offcanvas</button>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas-header">
                 <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 ...
@@ -320,10 +352,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab4" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill" data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab4" href="#nav-result4" data-bs-toggle="pill"
+                data-bs-target="#nav-result4" role="tab" aria-controls="nav-result4" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4" role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab4" href="#nav-html4" data-bs-toggle="pill" data-bs-target="#nav-html4"
+                role="tab" aria-controls="nav-html4" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -333,12 +367,15 @@
         <!-- Tab Content -->
         <div class="tab-content" id="navTabContent4">
           <div class="tab-pane fade p-4 show active" id="nav-result4" role="tabpanel" aria-labelledby="nav-resultTab4">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom">Toggle bottom offcanvas</button>
 
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+              aria-labelledby="offcanvasBottomLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
               </div>
               <div class="offcanvas-body small">
                 ...
@@ -374,7 +411,9 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Scrolling the <code>&lt;body&gt;</code> element is disabled when an offcanvas and its backdrop are visible. Use the <code>data-bs-scroll</code> attribute to toggle <code>&lt;body&gt;</code> scrolling and <code>data-bs-backdrop</code> to toggle the backdrop.</p>
+      <p>Scrolling the <code>&lt;body&gt;</code> element is disabled when an offcanvas and its backdrop are visible. Use
+        the <code>data-bs-scroll</code> attribute to toggle <code>&lt;body&gt;</code> scrolling and
+        <code>data-bs-backdrop</code> to toggle the backdrop.</p>
 
       <!-- Card -->
       <div class="card">
@@ -383,10 +422,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab5" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab5" href="#nav-result5" data-bs-toggle="pill" data-bs-target="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab5" href="#nav-result5" data-bs-toggle="pill"
+                data-bs-target="#nav-result5" role="tab" aria-controls="nav-result5" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab5" href="#nav-html5" data-bs-toggle="pill" data-bs-target="#nav-html5" role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab5" href="#nav-html5" data-bs-toggle="pill" data-bs-target="#nav-html5"
+                role="tab" aria-controls="nav-html5" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -396,32 +437,43 @@
         <!-- Tab Content -->
         <div class="tab-content" id="navTabContent5">
           <div class="tab-pane fade p-4 show active" id="nav-result5" role="tabpanel" aria-labelledby="nav-resultTab5">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Enable backdrop (default)</button>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Enable backdrop
+              (default)</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling
+              & backdrop</button>
 
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+              id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 <p>Try scrolling the rest of the page to see this option in action.</p>
               </div>
             </div>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+              aria-labelledby="offcanvasWithBackdropLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Offcanvas with backdrop</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 <p>.....</p>
               </div>
             </div>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+              aria-labelledby="offcanvasWithBothOptionsLabel">
               <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
                 <p>Try scrolling the rest of the page to see this option in action.</p>
@@ -477,7 +529,9 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Since the offcanvas panel is conceptually a modal dialog, be sure to add <code>aria-labelledby=&quot;...&quot;</code>—referencing the offcanvas title—to <code>.offcanvas</code>. Note that you don’t need to add <code>role=&quot;dialog&quot;</code> since we already add it via JavaScript.</p>
+      <p>Since the offcanvas panel is conceptually a modal dialog, be sure to add
+        <code>aria-labelledby=&quot;...&quot;</code>—referencing the offcanvas title—to <code>.offcanvas</code>. Note
+        that you don’t need to add <code>role=&quot;dialog&quot;</code> since we already add it via JavaScript.</p>
     </div>
     <!-- End Content -->
   </main>
@@ -506,7 +560,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -528,10 +582,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/docs-search.json')
-      .then(response => response.json())
-      .then(data => {
-        docsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
 
       // INITIALIZATION OF GO TO
       // =======================================================
@@ -539,4 +593,5 @@
     })()
   </script>
 </body>
+
 </html>

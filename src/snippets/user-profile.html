@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>User Profile - Snippets | Unify - Multipurpose Responsive Template</title>
+  <title>User Profile - Snippets | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,8 +34,8 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/snippets-sidebar.html", {
-      "category": "",
-      "link": "user-profile.html"
+    "category": "",
+    "link": "user-profile.html"
     })
     <!-- End Navbar -->
 
@@ -63,10 +64,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab1" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill"
+                data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1"
+                role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -81,14 +84,16 @@
               <div class="row justify-content-md-center">
                 <div class="col-md-8">
                   <div class="text-center">
-                    <img class="avatar avatar-xxl avatar-circle mb-3" src="@@autopath/assets/img/160x160/img10.jpg" alt="Image Description">
-                      
+                    <img class="avatar avatar-xxl avatar-circle mb-3" src="@@autopath/assets/img/160x160/img10.jpg"
+                      alt="Image Description">
+
                     <div class="mb-4">
                       <h3>Louise Donadieu</h3>
                       <span class="d-block mb-1">Founder &amp; Lead Designer, Flowspoke</span>
-                      <p>Every week I share a rundown of the best tools, tips, and resources to help you flourish as a digital creator. But don't just take my word for it…</p>
+                      <p>Every week I share a rundown of the best tools, tips, and resources to help you flourish as a
+                        digital creator. But don't just take my word for it…</p>
                     </div>
-                    
+
                     <button type="button" class="btn btn-outline-primary btn-sm">
                       <i class="bi-person-plus-fill me-1"></i> Follow
                     </button>
@@ -148,10 +153,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab2" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill"
+                data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2"
+                role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -173,7 +180,8 @@
                     <!-- Media -->
                     <div class="d-sm-flex">
                       <div class="flex-shrink-0 mb-3 mb-sm-0">
-                        <img class="avatar avatar-xl avatar-circle" src="@@autopath/assets/img/160x160/img10.jpg" alt="Image Description">
+                        <img class="avatar avatar-xl avatar-circle" src="@@autopath/assets/img/160x160/img10.jpg"
+                          alt="Image Description">
                       </div>
 
                       <div class="flex-grow-1 ms-sm-4">
@@ -188,7 +196,11 @@
                         </div>
                         <!-- End Media -->
 
-                        <p>Christina started his recruitment career on the agency side. Since then, she’s built a career helping customers get the most out of HR technology. She’s currently a Customer Success Specialist at Unify and spends her time speaking to in-house recruiters all over the world - helping them solve their recruitment challenges, and get the most out of our talent acquisition software.</p>
+                        <p>Christina started his recruitment career on the agency side. Since then, she’s built a career
+                          helping customers get the most out of HR technology. She’s currently a Customer Success
+                          Specialist at Unify and spends her time speaking to in-house recruiters all over the world -
+                          helping them solve their recruitment challenges, and get the most out of our talent
+                          acquisition software.</p>
                       </div>
                     </div>
                     <!-- End Media -->
@@ -273,7 +285,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -295,10 +307,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/snippets-search.json')
-      .then(response => response.json())
-      .then(data => {
-        snippetsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          snippetsSearch.getItem(0).add(data)
+        })
 
 
       // INITIALIZATION OF GO TO
@@ -307,4 +319,5 @@
     })()
   </script>
 </body>
+
 </html>

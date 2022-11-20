@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Sticky Block - Documentation | Unify - Multipurpose Responsive Template</title>
+  <title>Sticky Block - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,7 +34,7 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/docs-sidebar.html", {
-      "link": "sticky-block.html"
+    "link": "sticky-block.html"
     })
     <!-- End Navbar -->
 
@@ -56,7 +57,8 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing Plugins</u></em> to enable it.</p>
+      <p>Copy-paste the following <code>&lt;script&gt;</code> near the end of your pages under <em><u>JS Implementing
+            Plugins</u></em> to enable it.</p>
 
       <pre class="rounded mb-4">
         <code class="language-html" data-lang="html">
@@ -64,7 +66,8 @@
         </code>
       </pre>
 
-      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing <code>&lt;/body&gt;</code> tag, to enable it.</p>
+      <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing
+        <code>&lt;/body&gt;</code> tag, to enable it.</p>
 
       <pre class="rounded">
         <code class="language-html" data-lang="html">
@@ -141,7 +144,8 @@
                 <td>
                   <p><code>targetSelector</code></p>
                 </td>
-                <td>Determines the height of which element should be taken into account when calculating the <code>startPoint</code></td>
+                <td>Determines the height of which element should be taken into account when calculating the
+                  <code>startPoint</code></td>
                 <td><code>null</code></td>
               </tr>
 
@@ -165,7 +169,8 @@
                 <td>
                   <p><code>startPoint</code></p>
                 </td>
-                <td>Determines upon reaching which block specified in the value, the sticks the block begins to become <code>fixed</code></td>
+                <td>Determines upon reaching which block specified in the value, the sticks the block begins to become
+                  <code>fixed</code></td>
                 <td><code>null</code></td>
               </tr>
 
@@ -173,7 +178,9 @@
                 <td>
                   <p><code>endPoint</code></p>
                 </td>
-                <td>Determines upon reaching which block specified in the value, the sticks the block ceases to be <code>fixed</code>. If the stick does not have a breakpoint, then set the value to <code>9999999</code>, that is, the maximum possible page height</td>
+                <td>Determines upon reaching which block specified in the value, the sticks the block ceases to be
+                  <code>fixed</code>. If the stick does not have a breakpoint, then set the value to
+                  <code>9999999</code>, that is, the maximum possible page height</td>
                 <td><code>null</code></td>
               </tr>
 
@@ -181,7 +188,8 @@
                 <td>
                   <p><code>breakpoint</code></p>
                 </td>
-                <td>Determines with what permission the plugin is initialized. Resolution Map corresponds to Bootstrap 4</td>
+                <td>Determines with what permission the plugin is initialized. Resolution Map corresponds to Bootstrap 4
+                </td>
                 <td><code>'lg'</code></td>
               </tr>
             </tbody>
@@ -219,7 +227,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -241,10 +249,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/docs-search.json')
-      .then(response => response.json())
-      .then(data => {
-        docsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
 
       // INITIALIZATION OF GO TO
       // =======================================================
@@ -259,4 +267,5 @@
     })()
   </script>
 </body>
+
 </html>

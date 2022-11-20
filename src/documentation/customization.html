@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Customization - Documentation | Unify - Multipurpose Responsive Template</title>
+  <title>Customization - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,7 +34,7 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/docs-sidebar.html", {
-      "link": "customization.html"
+    "link": "customization.html"
     })
     <!-- End Navbar -->
 
@@ -44,7 +45,8 @@
         <div class="row align-items-center">
           <div class="col-sm">
             <h1 class="docs-page-header-title">Customization</h1>
-            <p class="docs-page-header-text">Take advantage of the Unify's past, current and future updates, by learning how to create your own content without changing the core styles of Unify.</p>
+            <p class="docs-page-header-text">Take advantage of the Unify's past, current and future updates, by learning
+              how to create your own content without changing the core styles of Unify.</p>
           </div>
         </div>
       </div>
@@ -52,7 +54,8 @@
 
       <!-- Heading -->
       <h2 id="how-to-include-a-typeface" class="hs-docs-heading">
-        How to include a typeface? <a class="anchorjs-link" href="#how-to-include-a-typeface" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        How to include a typeface? <a class="anchorjs-link" href="#how-to-include-a-typeface" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
@@ -66,7 +69,9 @@
 
       <ol>
         <li>
-          <p>Use the <code>$font-family-base</code> attribute as our typographic base applied to the <code>&lt;body&gt;</code> in <code>_user-variables.scss</code> file to change the current font family variable with yours.</p>
+          <p>Use the <code>$font-family-base</code> attribute as our typographic base applied to the
+            <code>&lt;body&gt;</code> in <code>_user-variables.scss</code> file to change the current font family
+            variable with yours.</p>
 
           <pre class="rounded mb-4">
             <code class="language-scss" data-lang="scss">
@@ -94,7 +99,8 @@
 
       <ol>
         <li>
-          <p>Simply replace the font family <code>font-family</code> from <code>&lt;body&gt;</code> in <code>theme.css</code> tag with yours.</p>
+          <p>Simply replace the font family <code>font-family</code> from <code>&lt;body&gt;</code> in
+            <code>theme.css</code> tag with yours.</p>
 
           <pre class="rounded mb-4">
             <code class="language-css" data-lang="css">
@@ -123,40 +129,51 @@
       <!-- End Heading -->
 
       <p>Utilize our source SASS files to take advantage of variables, mixins, and more.</p>
-      <p>Whenever possible, avoid modifying Unify's core files. For SASS, that means creating your own stylesheet that imports Bootstrap so you can modify and extend it.</p>
+      <p>Whenever possible, avoid modifying Unify's core files. For SASS, that means creating your own stylesheet that
+        imports Bootstrap so you can modify and extend it.</p>
 
       <!-- Heading -->
       <h2 id="customizing-sass" class="hs-docs-heading">
-        Customizing SASS <a class="anchorjs-link" href="#customizing-sass" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Customizing SASS <a class="anchorjs-link" href="#customizing-sass" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
-      <p>To avoid file loss, overrides of your custom styles or any other conflicts during the upgrade process, create or modify your styles with these 2 files <code>src/assets/scss/</code>:</p>
+      <p>To avoid file loss, overrides of your custom styles or any other conflicts during the upgrade process, create
+        or modify your styles with these 2 files <code>src/assets/scss/</code>:</p>
 
       <ul>
-        <li><code>_user-variables.scss</code> - Variables file for customizing or overriding Bootstrap core and Unify elements/components that have been tied to variables.</li>
+        <li><code>_user-variables.scss</code> - Variables file for customizing or overriding Bootstrap core and Unify
+          elements/components that have been tied to variables.</li>
         <li><code>_user.scss</code> - Create a new style in here.</li>
       </ul>
 
       <!-- Alert -->
       <div class="alert alert-soft-dark mt-3" role="alert">
-        <span class="fw-bold">Heads up!</span> Custom files along with Bootstrap core CSS files will be generated into the <code>theme.css</code> file.
+        <span class="fw-bold">Heads up!</span> Custom files along with Bootstrap core CSS files will be generated into
+        the <code>theme.css</code> file.
       </div>
       <!-- End Alert -->
 
       <!-- Heading -->
       <h2 id="variable-defaults" class="hs-docs-heading">
-        Variable defaults <a class="anchorjs-link" href="#variable-defaults" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Variable defaults <a class="anchorjs-link" href="#variable-defaults" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
-      <p>Every SASS variable in Unify includes the <code>!default</code> flag allowing you to override the variable's default value in your own SASS without modifying either Bootstrap or Unify's source code. Copy and paste variables as needed, modify their values, and remove the <code>!default</code> flag. If a variable has already been assigned, then it won't be re-assigned by the default values in Unify.</p>
+      <p>Every SASS variable in Unify includes the <code>!default</code> flag allowing you to override the variable's
+        default value in your own SASS without modifying either Bootstrap or Unify's source code. Copy and paste
+        variables as needed, modify their values, and remove the <code>!default</code> flag. If a variable has already
+        been assigned, then it won't be re-assigned by the default values in Unify.</p>
 
       <p>You will find the complete list of Unify's variables in <code>src/assets/scss/Unify/_variables.scss</code>.</p>
 
-      <p>Variable overrides within the same SASS file can come before or after the default variables. However, when overriding across SASS files, your overrides must come before you import Unify's SASS files.</p>
+      <p>Variable overrides within the same SASS file can come before or after the default variables. However, when
+        overriding across SASS files, your overrides must come before you import Unify's SASS files.</p>
 
-      <p>Here's an example that changes the <code>color</code> of the template in the <code>scss/_user-variables.scss</code> file when importing and compiling Unify via npm:</p>
+      <p>Here's an example that changes the <code>color</code> of the template in the
+        <code>scss/_user-variables.scss</code> file when importing and compiling Unify via npm:</p>
 
       <pre class="rounded">
         <code class="language-scss" data-lang="scss">
@@ -171,7 +188,8 @@
       </h2>
       <!-- End Heading -->
 
-      <p>To modify an existing color in our <code>$theme-colors</code> map, add the following to your custom SASS file:</p>
+      <p>To modify an existing color in our <code>$theme-colors</code> map, add the following to your custom SASS file:
+      </p>
 
       <pre class="rounded">
         <code class="language-scss" data-lang="scss">
@@ -205,9 +223,11 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Customize Unify with our built-in custom variables file and easily toggle global CSS preferences with <code>$enable-*</code> SASS variables.</p>
+      <p>Customize Unify with our built-in custom variables file and easily toggle global CSS preferences with
+        <code>$enable-*</code> SASS variables.</p>
 
-      <p>You can find and customize these variables for key global options in Unify's <code>scss/unify/_variables.scss</code> file.</p>
+      <p>You can find and customize these variables for key global options in Unify's
+        <code>scss/unify/_variables.scss</code> file.</p>
 
       <pre class="rounded mb-4">
         <code class="language-scss" data-lang="scss">
@@ -264,7 +284,8 @@
             <tr>
               <td><code>$enable-validation-icons</code></td>
               <td><code>true</code> or <code>false</code> (default)</td>
-              <td>Enables <code>background-image</code> icons within textual inputs and some custom forms for validation states.</td>
+              <td>Enables <code>background-image</code> icons within textual inputs and some custom forms for validation
+                states.</td>
             </tr>
           </tbody>
         </table>
@@ -278,7 +299,8 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Many of Unify's various components and utilities are built through a series of colors defined in a SASS map. This map can be looped over in SASS to quickly generate a series of rulesets.</p>
+      <p>Many of Unify's various components and utilities are built through a series of colors defined in a SASS map.
+        This map can be looped over in SASS to quickly generate a series of rulesets.</p>
 
       <!-- Heading -->
       <h2 id="theme-colors" class="hs-docs-heading">
@@ -286,7 +308,8 @@
       </h2>
       <!-- End Heading -->
 
-      <p>We use a subset of all Bootstrap colors to create a smaller color palette for generating color schemes, also available as SASS variables and a SASS map in Unify's <code>scss/unify/_variables.scss</code> file.</p>
+      <p>We use a subset of all Bootstrap colors to create a smaller color palette for generating color schemes, also
+        available as SASS variables and a SASS map in Unify's <code>scss/unify/_variables.scss</code> file.</p>
 
       <div class="row gx-2">
         <div class="col-md-4">
@@ -331,7 +354,8 @@
         </code>
       </pre>
 
-      <p><a class="link link-bordered" href="colors.html">Color utility classes</a> are also available for setting <code>color</code> and <code>background-color</code>.</p>
+      <p><a class="link link-bordered" href="colors.html">Color utility classes</a> are also available for setting
+        <code>color</code> and <code>background-color</code>.</p>
 
       <!-- Heading -->
       <h2 id="grays" class="hs-docs-heading">
@@ -339,7 +363,8 @@
       </h2>
       <!-- End Heading -->
 
-      <p>An expansive set of gray variables and a SASS map in <code>scss/unify/_variables.scss</code> for consistent shades of gray across your project.</p>
+      <p>An expansive set of gray variables and a SASS map in <code>scss/unify/_variables.scss</code> for consistent
+        shades of gray across your project.</p>
 
       <div class="row">
         <div class="col-md-4">
@@ -362,7 +387,10 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Many of Bootstrap's components and utilities are built with <code>@each</code> loops that iterate over a SASS map. This is especially helpful for generating variants of a component by <code>$theme-colors</code> and creating responsive variants for each breakpoint. As you customize these SASS maps and recompile, you'll automatically see your changes reflected in these loops.</p>
+      <p>Many of Bootstrap's components and utilities are built with <code>@each</code> loops that iterate over a SASS
+        map. This is especially helpful for generating variants of a component by <code>$theme-colors</code> and
+        creating responsive variants for each breakpoint. As you customize these SASS maps and recompile, you'll
+        automatically see your changes reflected in these loops.</p>
 
       <!-- Heading -->
       <h2 id="customizing-js" class="hs-docs-heading">
@@ -370,7 +398,8 @@
       </h2>
       <!-- End Heading -->
 
-      <p>To avoid file loss, overrides of your custom styles or any other conflicts during the upgrade process, create or modify your styles with <code>assets/js/theme-custom.js</code> file.</p>
+      <p>To avoid file loss, overrides of your custom styles or any other conflicts during the upgrade process, create
+        or modify your styles with <code>assets/js/theme-custom.js</code> file.</p>
     </div>
     <!-- End Content -->
   </main>
@@ -398,7 +427,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -412,10 +441,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/docs-search.json')
-      .then(response => response.json())
-      .then(data => {
-        docsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
 
       // INITIALIZATION OF GO TO
       // =======================================================
@@ -423,4 +452,5 @@
     })()
   </script>
 </body>
+
 </html>

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Spacing - Documentation | Unify - Multipurpose Responsive Template</title>
+  <title>Spacing - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,7 +34,7 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/docs-sidebar.html", {
-      "link": "spacing.html"
+    "link": "spacing.html"
     })
     <!-- End Navbar -->
 
@@ -44,7 +45,8 @@
         <div class="row align-items-center">
           <div class="col-sm">
             <h1 class="docs-page-header-title">Spacing</h1>
-            <p class="docs-page-header-text">Unify includes a wide range of shorthand responsive margin, padding, and gap utility classes to modify an element’s appearance.</p>
+            <p class="docs-page-header-text">Unify includes a wide range of shorthand responsive margin, padding, and
+              gap utility classes to modify an element’s appearance.</p>
           </div>
         </div>
       </div>
@@ -52,13 +54,18 @@
 
       <!-- Heading -->
       <h2 id="margin-and-padding" class="hs-docs-heading">
-        Margin and padding <a class="anchorjs-link" href="#margin-and-padding" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Margin and padding <a class="anchorjs-link" href="#margin-and-padding" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
-      <p>Assign responsive-friendly <code>margin</code> or <code>padding</code> values to an element or a subset of its sides with shorthand classes. Includes support for individual properties, all properties, and vertical and horizontal properties. Classes are built from a default Sass map ranging from <code>.25rem</code> to <code>3rem</code>.</p>
+      <p>Assign responsive-friendly <code>margin</code> or <code>padding</code> values to an element or a subset of its
+        sides with shorthand classes. Includes support for individual properties, all properties, and vertical and
+        horizontal properties. Classes are built from a default Sass map ranging from <code>.25rem</code> to
+        <code>3rem</code>.</p>
 
-      <p>Using the CSS Grid layout module? Consider using <a class="link link-bordered" href="#gap">the gap utility</a>.</p>
+      <p>Using the CSS Grid layout module? Consider using <a class="link link-bordered" href="#gap">the gap utility</a>.
+      </p>
 
       <!-- Heading -->
       <h2 id="notation" class="hs-docs-heading">
@@ -66,9 +73,13 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Spacing utilities that apply to all breakpoints, from <code>xs</code> to <code>xxl</code>, have no breakpoint abbreviation in them. This is because those classes are applied from <code>min-width: 0</code> and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
+      <p>Spacing utilities that apply to all breakpoints, from <code>xs</code> to <code>xxl</code>, have no breakpoint
+        abbreviation in them. This is because those classes are applied from <code>min-width: 0</code> and up, and thus
+        are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.</p>
 
-      <p>The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code> and <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>.</p>
+      <p>The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code> and
+        <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>,
+        <code>xl</code>, and <code>xxl</code>.</p>
 
       <p>Where <em>property</em> is one of:</p>
 
@@ -82,22 +93,31 @@
       <ul>
         <li><code>t</code> - for classes that set <code>margin-top</code> or <code>padding-top</code></li>
         <li><code>b</code> - for classes that set <code>margin-bottom</code> or <code>padding-bottom</code></li>
-        <li><code>s</code> - for classes that set <code>margin-left</code> or <code>padding-left</code> in LTR, <code>margin-right</code> or <code>padding-right</code> in RTL</li>
-        <li><code>e</code> - for classes that set <code>margin-right</code> or <code>padding-right</code> in LTR, <code>margin-left</code> or <code>padding-left</code> in RTL</li>
+        <li><code>s</code> - for classes that set <code>margin-left</code> or <code>padding-left</code> in LTR,
+          <code>margin-right</code> or <code>padding-right</code> in RTL</li>
+        <li><code>e</code> - for classes that set <code>margin-right</code> or <code>padding-right</code> in LTR,
+          <code>margin-left</code> or <code>padding-left</code> in RTL</li>
         <li><code>x</code> - for classes that set both <code>*-left</code> and <code>*-right</code></li>
         <li><code>y</code> - for classes that set both <code>*-top</code> and <code>*-bottom</code></li>
-        <li>blank - for classes that set a <code>margin</code> or <code>padding</code> on all 4 sides of the element</li>
+        <li>blank - for classes that set a <code>margin</code> or <code>padding</code> on all 4 sides of the element
+        </li>
       </ul>
 
       <p>Where <em>size</em> is one of:</p>
 
       <ul>
-        <li><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to <code>0</code></li>
-        <li><code>1</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .25</code></li>
-        <li><code>2</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * .5</code></li>
-        <li><code>3</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer</code></li>
-        <li><code>4</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * 1.5</code></li>
-        <li><code>5</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to <code>$spacer * 3</code></li>
+        <li><code>0</code> - for classes that eliminate the <code>margin</code> or <code>padding</code> by setting it to
+          <code>0</code></li>
+        <li><code>1</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to
+          <code>$spacer * .25</code></li>
+        <li><code>2</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to
+          <code>$spacer * .5</code></li>
+        <li><code>3</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to
+          <code>$spacer</code></li>
+        <li><code>4</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to
+          <code>$spacer * 1.5</code></li>
+        <li><code>5</code> - (by default) for classes that set the <code>margin</code> or <code>padding</code> to
+          <code>$spacer * 3</code></li>
         <li><code>auto</code> - for classes that set the <code>margin</code> to auto</li>
       </ul>
 
@@ -105,33 +125,43 @@
 
       <!-- Heading -->
       <h2 id="content-space-notation" class="hs-docs-heading">
-        Content-space notation <a class="anchorjs-link" href="#content-space-notation" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Content-space notation <a class="anchorjs-link" href="#content-space-notation" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
-      <p>The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code> and <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code>, and <code>xxl</code>.</p>
+      <p>The classes are named using the format <code>{property}{sides}-{size}</code> for <code>xs</code> and
+        <code>{property}{sides}-{breakpoint}-{size}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>,
+        <code>xl</code>, and <code>xxl</code>.</p>
 
       <p>Where <em>property</em> is one of:</p>
 
       <ul>
-        <li><code>content-space</code> - for classes that set <code>padding-top</code> and <code>padding-bottom</code></li>
+        <li><code>content-space</code> - for classes that set <code>padding-top</code> and <code>padding-bottom</code>
+        </li>
       </ul>
 
       <p>Where <em>sides</em> is one of:</p>
 
       <ul>
-        <li><code>content-space-t</code> - for classes that set <code>padding-top</code> or <code>padding-top</code></li>
-        <li><code>content-space-b</code> - for classes that set <code>padding-bottom</code> or <code>padding-bottom</code></li>
+        <li><code>content-space-t</code> - for classes that set <code>padding-top</code> or <code>padding-top</code>
+        </li>
+        <li><code>content-space-b</code> - for classes that set <code>padding-bottom</code> or
+          <code>padding-bottom</code></li>
       </ul>
 
       <p>Where <em>size</em> is one of:</p>
 
       <ul>
         <li><code>0</code> - for classes that eliminate the <code>padding</code> by setting it to <code>0</code></li>
-        <li><code>1</code> - (by default) for classes that set the <code>padding</code> to <code>$content-spacer * 4</code></li>
-        <li><code>2</code> - (by default) for classes that set the <code>padding</code> to <code>$content-spacer * 5</code></li>
-        <li><code>3</code> - (by default) for classes that set the <code>padding</code> to <code>$content-spacer * 7.5</code></li>
-        <li><code>4</code> - (by default) for classes that set the <code>padding</code> to <code>$content-spacer * 10</code></li>
+        <li><code>1</code> - (by default) for classes that set the <code>padding</code> to
+          <code>$content-spacer * 4</code></li>
+        <li><code>2</code> - (by default) for classes that set the <code>padding</code> to
+          <code>$content-spacer * 5</code></li>
+        <li><code>3</code> - (by default) for classes that set the <code>padding</code> to
+          <code>$content-spacer * 7.5</code></li>
+        <li><code>4</code> - (by default) for classes that set the <code>padding</code> to
+          <code>$content-spacer * 10</code></li>
         <li><code>auto</code> - for classes that set the <code>padding</code> to auto</li>
       </ul>
 
@@ -168,11 +198,14 @@
 
       <!-- Heading -->
       <h2 id="horizontal-centering" class="hs-docs-heading">
-        Horizontal centering <a class="anchorjs-link" href="#horizontal-centering" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Horizontal centering <a class="anchorjs-link" href="#horizontal-centering" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
-      <p>Additionally, Bootstrap also includes an <code>.mx-auto</code> class for horizontally centering fixed-width block level content—that is, content that has <code>display: block</code> and a <code>width</code> set—by setting the horizontal margins to <code>auto</code>.</p>
+      <p>Additionally, Bootstrap also includes an <code>.mx-auto</code> class for horizontally centering fixed-width
+        block level content—that is, content that has <code>display: block</code> and a <code>width</code> set—by
+        setting the horizontal margins to <code>auto</code>.</p>
 
       <!-- Card -->
       <div class="card">
@@ -181,10 +214,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab1" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill" data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab1" href="#nav-result1" data-bs-toggle="pill"
+                data-bs-target="#nav-result1" role="tab" aria-controls="nav-result1" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1" role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab1" href="#nav-html1" data-bs-toggle="pill" data-bs-target="#nav-html1"
+                role="tab" aria-controls="nav-html1" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -219,9 +254,13 @@
       </h2>
       <!-- End Heading -->
 
-      <p>In CSS, <code>margin</code> properties can utilize negative values (<code>padding</code> cannot). These negative margins are <strong>disabled by default</strong>, but can be enabled in Sass by setting <code>$enable-negative-margins: true</code>.</p>
+      <p>In CSS, <code>margin</code> properties can utilize negative values (<code>padding</code> cannot). These
+        negative margins are <strong>disabled by default</strong>, but can be enabled in Sass by setting
+        <code>$enable-negative-margins: true</code>.</p>
 
-      <p>The syntax is nearly the same as the default, positive margin utilities, but with the addition of <code>n</code> before the requested size. Here&rsquo;s an example class that&rsquo;s the opposite of <code>.mt-1</code>:</p>
+      <p>The syntax is nearly the same as the default, positive margin utilities, but with the addition of
+        <code>n</code> before the requested size. Here&rsquo;s an example class that&rsquo;s the opposite of
+        <code>.mt-1</code>:</p>
 
       <pre class="rounded mb-3">
         <code class="language-scss" data-lang="html">
@@ -237,7 +276,10 @@
       </h2>
       <!-- End Heading -->
 
-      <p>When using <code>display: grid</code>, you can make use of <code>gap</code> utilities on the parent grid container. This can save on having to add margin utilities to individual grid items (children of a <code>display: grid</code> container). Gap utilities are responsive by default, and are generated via our utilities API, based on the <code>$spacers</code> Sass map.</p>
+      <p>When using <code>display: grid</code>, you can make use of <code>gap</code> utilities on the parent grid
+        container. This can save on having to add margin utilities to individual grid items (children of a
+        <code>display: grid</code> container). Gap utilities are responsive by default, and are generated via our
+        utilities API, based on the <code>$spacers</code> Sass map.</p>
 
       <!-- Card -->
       <div class="card mb-7">
@@ -246,10 +288,12 @@
           <!-- Nav -->
           <ul class="nav nav-segment" id="navTab2" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill" data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
+              <a class="nav-link active" id="nav-resultTab2" href="#nav-result2" data-bs-toggle="pill"
+                data-bs-target="#nav-result2" role="tab" aria-controls="nav-result2" aria-selected="true">Preview</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2" role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
+              <a class="nav-link" id="nav-htmlTab2" href="#nav-html2" data-bs-toggle="pill" data-bs-target="#nav-html2"
+                role="tab" aria-controls="nav-html2" aria-selected="false">HTML</a>
             </li>
           </ul>
           <!-- End Nav -->
@@ -282,7 +326,9 @@
       </div>
       <!-- End Card -->
 
-      <p>Support includes responsive options for all of Bootstrap&rsquo;s grid breakpoints, as well as six sizes from the <code>$spacers</code> map (<code>0</code>–<code>5</code>). There is no <code>.gap-auto</code> utility class as it&rsquo;s effectively the same as <code>.gap-0</code>.</p>
+      <p>Support includes responsive options for all of Bootstrap&rsquo;s grid breakpoints, as well as six sizes from
+        the <code>$spacers</code> map (<code>0</code>–<code>5</code>). There is no <code>.gap-auto</code> utility class
+        as it&rsquo;s effectively the same as <code>.gap-0</code>.</p>
 
       <!-- Heading -->
       <h2 id="sass" class="hs-docs-heading">
@@ -320,7 +366,9 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Spacing utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api">Learn how to use the utilities API.</a></p>
+      <p>Spacing utilities are declared in our utilities API in <code>scss/_utilities.scss</code>. <a
+          class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api">Learn how to
+          use the utilities API.</a></p>
 
       <pre class="rounded mb-3">
         <code class="language-scss" data-lang="html">
@@ -457,7 +505,8 @@
 
       <!-- Heading -->
       <h2 id="content-space-examples" class="hs-docs-heading">
-        Content-space examples <a class="anchorjs-link" href="#content-space-examples" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Content-space examples <a class="anchorjs-link" href="#content-space-examples" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
@@ -482,13 +531,15 @@
 
       <!-- Heading -->
       <h2 id="content-space-sass" class="hs-docs-heading">
-        Content-space sass <a class="anchorjs-link" href="#content-space-sass" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Content-space sass <a class="anchorjs-link" href="#content-space-sass" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
       <!-- Heading -->
       <h2 id="content-space-maps" class="hs-docs-heading">
-        Content-space maps <a class="anchorjs-link" href="#content-space-maps" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Content-space maps <a class="anchorjs-link" href="#content-space-maps" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
@@ -509,11 +560,14 @@
 
       <!-- Heading -->
       <h2 id="content-space-utilities-api" class="hs-docs-heading">
-        Content-space utilities API <a class="anchorjs-link" href="#content-space-utilities-api" aria-label="Anchor" data-anchorjs-icon="#"></a>
+        Content-space utilities API <a class="anchorjs-link" href="#content-space-utilities-api" aria-label="Anchor"
+          data-anchorjs-icon="#"></a>
       </h2>
       <!-- End Heading -->
 
-      <p>Spacing utilities are declared in our utilities API in <code>scss/space/_utilities.scss</code>. <a class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api">Learn how to use the utilities API.</a></p>
+      <p>Spacing utilities are declared in our utilities API in <code>scss/space/_utilities.scss</code>. <a
+          class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api">Learn how to
+          use the utilities API.</a></p>
 
       <pre class="rounded mb-3">
         <code class="language-scss" data-lang="html">
@@ -565,7 +619,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -587,10 +641,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/docs-search.json')
-      .then(response => response.json())
-      .then(data => {
-        docsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
 
       // INITIALIZATION OF GO TO
       // =======================================================
@@ -598,4 +652,5 @@
     })()
   </script>
 </body>
+
 </html>

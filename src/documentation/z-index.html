@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Z-index - Documentation | Unify - Multipurpose Responsive Template</title>
+  <title>Z-index - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="@@autopath/favicon.ico">
@@ -33,7 +34,7 @@
   <main id="content" role="main">
     <!-- Navbar -->
     @@include("@@autopath/partials/docs/docs-sidebar.html", {
-      "link": "z-index.html"
+    "link": "z-index.html"
     })
     <!-- End Navbar -->
 
@@ -97,7 +98,9 @@
       </h2>
       <!-- End Heading -->
 
-      <p>Spacing utilities are declared in our utilities API in <code>scss/unify/_utilities.scss</code>. <a class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api">Learn how to use the utilities API.</a></p>
+      <p>Spacing utilities are declared in our utilities API in <code>scss/unify/_utilities.scss</code>. <a
+          class="link link-bordered" href="https://getbootstrap.com/docs/5.0/utilities/api/#using-the-api">Learn how to
+          use the utilities API.</a></p>
 
       <pre class="rounded mb-3">
         <code class="language-scss" data-lang="html">
@@ -136,7 +139,7 @@
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
+    (function () {
       // INITIALIZATION OF HEADER
       // =======================================================
       new HSHeader('#header').init()
@@ -158,10 +161,10 @@
       // GET JSON FILE RESULTS
       // =======================================================
       fetch('@@autopath/assets/json/docs-search.json')
-      .then(response => response.json())
-      .then(data => {
-        docsSearch.getItem(0).add(data)
-      })
+        .then(response => response.json())
+        .then(data => {
+          docsSearch.getItem(0).add(data)
+        })
 
       // INITIALIZATION OF GO TO
       // =======================================================
@@ -169,4 +172,5 @@
     })()
   </script>
 </body>
+
 </html>
