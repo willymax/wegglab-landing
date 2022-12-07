@@ -10,7 +10,10 @@
   <title>Offcanvas - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="@@autopath/assets/svg/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="@@autopath/assets/svg/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="@@autopath/assets/svg/favicons/favicon-16x16.png">
+  <link rel="manifest" href="@@autopath/assets/svg/favicons/site.webmanifest">
 
   <!-- Font -->
   <link href="@@vars.themeFont" rel="stylesheet">
@@ -75,7 +78,8 @@
 
       <p><span class="text-dark fw-bold">Heads up!</span> Given how CSS handles animations, you cannot use
         <code>margin</code> or <code>translate</code> on an <code>.offcanvas</code> element. Instead, use the class as
-        an independent wrapping element.</p>
+        an independent wrapping element.
+      </p>
 
       <div class="alert alert-soft-dark">
         The animation effect of this component is dependent on the <code>prefers-reduced-motion</code> media query. See
@@ -413,7 +417,8 @@
 
       <p>Scrolling the <code>&lt;body&gt;</code> element is disabled when an offcanvas and its backdrop are visible. Use
         the <code>data-bs-scroll</code> attribute to toggle <code>&lt;body&gt;</code> scrolling and
-        <code>data-bs-backdrop</code> to toggle the backdrop.</p>
+        <code>data-bs-backdrop</code> to toggle the backdrop.
+      </p>
 
       <!-- Card -->
       <div class="card">
@@ -531,7 +536,8 @@
 
       <p>Since the offcanvas panel is conceptually a modal dialog, be sure to add
         <code>aria-labelledby=&quot;...&quot;</code>—referencing the offcanvas title—to <code>.offcanvas</code>. Note
-        that you don’t need to add <code>role=&quot;dialog&quot;</code> since we already add it via JavaScript.</p>
+        that you don’t need to add <code>role=&quot;dialog&quot;</code> since we already add it via JavaScript.
+      </p>
     </div>
     <!-- End Content -->
   </main>

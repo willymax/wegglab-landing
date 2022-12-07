@@ -10,7 +10,10 @@
   <title>Scrollspy - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="@@autopath/assets/svg/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="@@autopath/assets/svg/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="@@autopath/assets/svg/favicons/favicon-16x16.png">
+  <link rel="manifest" href="@@autopath/assets/svg/favicons/site.webmanifest">
 
   <!-- Font -->
   <link href="@@vars.themeFont" rel="stylesheet">
@@ -70,7 +73,8 @@
       </pre>
 
       <p>Copy-paste the init function under <em><u>JS Plugins Init.</u></em>, before the closing
-        <code>&lt;/body&gt;</code> tag, to enable it.</p>
+        <code>&lt;/body&gt;</code> tag, to enable it.
+      </p>
 
       <pre class="rounded">
         <code class="language-html" data-lang="html">
@@ -102,9 +106,11 @@
       <ul>
         <li>Scrollspy requires <code>data-hs-scrollspy-options='{ "target": "#yourID" }'</code> on
           <code>&lt;body&gt;</code> element and must point to an element with the target <code>ID</code>. And also, add
-          the <code>.js-scrollspy</code> class to the element where this <code>ID</code> is placed.</li>
+          the <code>.js-scrollspy</code> class to the element where this <code>ID</code> is placed.
+        </li>
         <li>Scrollspy requires <code>position: relative;</code> on the element, you’re spying on, usually the
-          <code>&lt;body&gt;</code>.</li>
+          <code>&lt;body&gt;</code>.
+        </li>
         <li>When spying on elements other than the <code>&lt;body&gt;</code>, be sure to have a <code>height</code> set
           and <code>overflow-y: scroll;</code> applied.</li>
         <li>Anchors (<code>&lt;a&gt;</code>) are required and must point to an element with that <code>ID</code>.</li>

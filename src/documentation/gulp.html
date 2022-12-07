@@ -10,7 +10,10 @@
   <title>Gulp - Documentation | Climax Answers</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="@@autopath/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="@@autopath/assets/svg/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="@@autopath/assets/svg/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="@@autopath/assets/svg/favicons/favicon-16x16.png">
+  <link rel="manifest" href="@@autopath/assets/svg/favicons/site.webmanifest">
 
   <!-- Font -->
   <link href="@@vars.themeFont" rel="stylesheet">
@@ -150,7 +153,8 @@
 
           <div class="flex-grow-1 ms-2">Please read first <a class="link link-bordered"
               href="@@autopath/documentation/index.html#file-structure">Introduction Page</a> to understand how
-            <strong>File Structure</strong> is organized in Unify.</div>
+            <strong>File Structure</strong> is organized in Unify.
+          </div>
         </div>
       </div>
       <!-- End Alert -->
@@ -178,7 +182,8 @@
       <p><code>gulp</code> is the main command to start compiling and watching SASS / HTML files. When you run
         <code>gulp</code> it starts a server poping up a new tab in your default browser. Any changes from the source
         files are instantly compiled on the fly and updates browser tab instantly with the help of Live Reload
-        (Browsersync).</p>
+        (Browsersync).
+      </p>
 
       <hr class="my-4">
 
@@ -191,12 +196,14 @@
       <p><code>gulp dist</code> command compiles and copies all files from <code>./src/*</code> folder into
         <code>./dist/*</code> folder and prepares production files. Basically, it copies whole complied assets into
         <code>./dist/*</code> folder with minified theme css/js files. Under the hood it performs the following
-        processes:</p>
+        processes:
+      </p>
 
       <ol class="list-py-1">
         <li>Minifies any CSS files from <code>./src/assets/css/*</code></li>
         <li>Minifies all JavaScript files from <code>./src/assets/js/*</code> and concatenates to
-          <code>theme.min.js</code> file</li>
+          <code>theme.min.js</code> file
+        </li>
         <li>Compiles any files where <code>gulp-file-include</code> is used (learn more about <a
             class="link link-bordered" href="#gulp-file-include">Gulp File Include</a> below)</li>
         <li>Then copies all files from <code>./src/*</code> (including libraries from <code>./node_modules/*</code>) and
@@ -213,14 +220,16 @@
 
       <p><code>gulp build</code> command prepares performance ready fully production files of your project into
         <code>./build/*</code> folder by automatically detecting all used asset sources from HTML pages. Under the hood
-        it performs the following processes:</p>
+        it performs the following processes:
+      </p>
 
       <ol class="list-py-1 mb-4">
         <li>Does the same work as <code>dist</code> process above, and:</li>
         <li>Minifies and concatenates any used CSS vendor files in HTML pages and saves as <code>vendor.min.css</code>
           into <code>./build/assets/css/*</code> </li>
         <li>Minifies and concatenates all used JavaScript vendor files in HTML pages and saves as
-          <code>vendor.min.js</code> into <code>./build/assets/js/*</code></li>
+          <code>vendor.min.js</code> into <code>./build/assets/js/*</code>
+        </li>
         <li>Automatically detects any used <code>jpg|png|svg|mp4|webm|ogv|json</code> file formats from HTML pages and
           copies to relevant folders</li>
       </ol>
@@ -268,7 +277,8 @@
           href="https://www.npmjs.com/package/gulp-file-include" target="_blank">official documentation <i
             class="bi-box-arrow-up-right"></i></a> for more options and details. In addition, <code>config.js</code>
         file includes variables with other options. More information can be obtained at the <a
-          class="link link-bordered" href="#configuration">Configuration</a> section below.</p>
+          class="link link-bordered" href="#configuration">Configuration</a> section below.
+      </p>
 
       <!-- Heading -->
       <h2 id="reserved-variables" class="hs-docs-heading mt-0">
@@ -313,7 +323,8 @@
           <h5>Overview</h5>
           <p>Since <code>[@@]autopath</code> is used within <code>./src/</code> folder, it's default path starts at
             <code>./src/</code> directory. The default directory name can be changed with the help of directoryNames
-            property from <code>config.js</code> file if needed.</p>
+            property from <code>config.js</code> file if needed.
+          </p>
 
           <h5>Example</h5>
           <p>Considering the file is located at the roof of <code>./src/</code> folder:</p>
@@ -341,7 +352,8 @@
 
               <div class="flex-grow-1 ms-2">Please note, due to the technical limitation of Gulp File Include the
                 <code>[@@]autopath</code> is not supported for <code>@@include</code> function inside partial files.
-                However, you can still use <code>[@@]autopath</code> to link any asset files within partial files.</div>
+                However, you can still use <code>[@@]autopath</code> to link any asset files within partial files.
+              </div>
             </div>
           </div>
           <!-- End Alert -->
@@ -422,7 +434,8 @@
       <!-- End Heading -->
 
       <p>The Build Modes Files generates two type of bundle files - <code>.css</code> and <code>.js</code> files in
-        <code>build</code> process:</p>
+        <code>build</code> process:
+      </p>
 
       <ol class="list-py-1 mb-4">
         <li>
@@ -674,7 +687,8 @@
         <div class="card-body">
           <h5>Overview</h5>
           <p>Concatenates and minifies only used JavaScript library files in HTML pages and saves as
-            <code>vendor.min.js</code> file, then replaces in all HTML pages.</p>
+            <code>vendor.min.js</code> file, then replaces in all HTML pages.
+          </p>
 
           <h5>Example</h5>
           <p>Placing <kbd>bundlejs:vendor</kbd> reserved comment in HTML file:</p>
@@ -826,7 +840,8 @@
           <p>Any new variables can be added inside <code>var {..}</code> object and used in HTML pages with double at
             <code>@@vars</code>. Variables are very practical to use when there are some repetitive values which should
             be updated at once in all pages. It helps to avoid manual changes from each HTML pages and gives handy
-            automation.</p>
+            automation.
+          </p>
 
           <p>Let's take an example of Google Fonts which is used in all HTML pages in Unify:</p>
 
@@ -852,7 +867,8 @@
           <p>In Unify, we extended the usage of variables even further and added compatibility to SVG files. The SVG
             files where variables are used, should be saved inside <code>svg-src/*</code> folder instead of
             <code>svg/*</code> folder at <code>./src/assets/*</code>. Any SVG files at
-            <code>./src/assets/svg-src/*</code> will be compiled and saved into <code>svg/*</code> folder.</p>
+            <code>./src/assets/svg-src/*</code> will be compiled and saved into <code>svg/*</code> folder.
+          </p>
 
           <p>The examples can be found in any SVG files at <code>./src/assets/svg-src/*</code> folder.</p>
 
@@ -894,7 +910,8 @@
               </div>
 
               <div class="flex-grow-1 ms-2">Please note, compiling the SVG files or applying any changes to
-                <code>config.js</code> file requires to restart the Gulp.</div>
+                <code>config.js</code> file requires to restart the Gulp.
+              </div>
             </div>
           </div>
           <!-- End Alert -->
@@ -971,7 +988,8 @@
           <p>Sometimes projects require to keep some files separately from concatenated bundle files. For that, there
             might be lots of reasons during the project development. The <code>skipFilesFromBundle</code> property helps
             to control what files should be avoided from the bundle files while <code>gulp dist</code> and
-            <code>gulp build</code> processes.</p>
+            <code>gulp build</code> processes.
+          </p>
         </div>
       </div>
       <!-- End Skip Files From Bundle -->
@@ -1036,7 +1054,8 @@
             <li>When files are not used in HTML pages like <code>theme-custom.js</code> in our case, as it's created for
               end user to include the custom JavaScript codes. However, we still need to provide the file in
               <code>.dist/*</code> folder and with the help of copyDependencies property it's copied and pasted into
-              <code>./dist/*</code> folder.</li>
+              <code>./dist/*</code> folder.
+            </li>
 
             <li>When asset files are included in the bundle packages but their sources are linked through CSS files like
               Font Files, Background Images and so on. Since, Gulp Toolkit reads files from HTML files, it can not
@@ -1152,7 +1171,8 @@
           <h5>Overview</h5>
           <p>Sometimes to enhance the site speed (page load), often CDN links are used. With the help of
             replacePathsToCDN property, the library asset paths can be replaced with the CDN links in
-            <code>./build/*</code> folder.</p>
+            <code>./build/*</code> folder.
+          </p>
 
           <h5>Example</h5>
           <pre class="rounded prism-light mb-4">
@@ -1214,7 +1234,8 @@
 
           <p>Let's say if <kbd>build: "./build"</kbd> is changed to <kbd>build: "./my-project"</kbd> the
             <code>gulp build</code> process will generate <code>./my-folder</code> folder instead of
-            <code>./build/</code> folder.</p>
+            <code>./build/</code> folder.
+          </p>
         </div>
       </div>
       <!-- End Directory Names -->
@@ -1274,7 +1295,8 @@
           <h5>Overview</h5>
           <p>A property with options to control bundle fine names in <code>build</code> processes. For example,
             <kbd>theme.min.js</kbd> can be changed to <kbd class="text-nowrap">myBrandName.min.js</kbd> in
-            <code>./dist/*</code> and <code>./build/*</code> folders.</p>
+            <code>./dist/*</code> and <code>./build/*</code> folders.
+          </p>
         </div>
       </div>
       <!-- End File Names -->
