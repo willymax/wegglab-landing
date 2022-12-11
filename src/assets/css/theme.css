@@ -20020,8 +20020,8 @@ input[type=number] {
 
 .navbar-brand-logo {
   width: 100%;
-  min-width: 6rem;
-  max-width: 6rem;
+  min-width: 15rem;
+  max-width: 15rem;
 }
 
 .navbar-brand-collapsed,
